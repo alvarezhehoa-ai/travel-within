@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CTASection from '../components/CTASection.astro';
+import FeaturesSection from '../components/FeaturesSection.astro';
+---
+<Layout title="About | Travel Within">
+  <Header />
+  <main>
+    <section class="relative pt-32 lg:pt-40 pb-24 overflow-hidden">
+      <div class="max-w-screen-2xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-16 lg:gap-24 items-center min-h-[70vh]">
+        <div>
+          <div class="inline-flex items-center gap-3 mb-6">
+            <span class="w-8 h-[1px] bg-tw-green"></span>
+            <span class="text-sm font-medium tracking-widest uppercase text-tw-green">About</span>
+          </div>
+          <h1 class="font-highlight text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tighter font-medium text-tw-black mb-8">
+            I help artists, dreamers, and leaders stop repeating what's not working.
+          </h1>
+          <p class="text-lg text-tw-gray-600 font-light leading-relaxed mb-6">
+            I'm Hehoa Alvarez. Founder of Travel Within. Systemic coach, constellation facilitator, and body worker.
+          </p>
+          <p class="text-lg text-tw-gray-600 font-light leading-relaxed">
+            I work at the intersection of three levels — body, family, and organization — because patterns don't stay in one place. They travel through your entire system until they're seen and interrupted at the root.
+          </p>
+        </div>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?q=80&w=2070&auto=format&fit=crop" alt="Hehoa Alvarez" class="w-full aspect-[4/5] object-cover rounded-3xl object-[50%_20%]" loading="lazy" />
+          <div class="absolute -bottom-8 -right-8 w-48 aspect-square bg-tw-green/10 rounded-full hidden md:block"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-tw-gray-100">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mx-auto">
+          <div class="inline-flex items-center gap-3 mb-6">
+            <span class="w-8 h-[1px] bg-tw-green"></span>
+            <span class="text-sm font-medium tracking-widest uppercase text-tw-green">My Story</span>
+          </div>
+          <h2 class="font-highlight text-4xl md:text-5xl tracking-tight font-medium text-tw-black mb-8 leading-[1.1]">
+            From corporate project management to systemic transformation.
+          </h2>
+          <div class="space-y-6 text-lg text-tw-gray-600 font-light leading-relaxed">
+            <p>My journey started in the corporate world — project management, business transformation, organizational design. I spent years helping companies restructure, optimize, and deliver. And I was good at it.</p>
+            <p>But I kept noticing something. The same problems kept coming back. Different team, same conflict. New strategy, same resistance. Reorganization, same bottlenecks. I realized that what I was treating at the surface level had roots that no PowerPoint or process map could reach.</p>
+            <p>That realization led me to systemic coaching, constellations, and body work. I trained in systemic facilitation, family constellations, trauma-informed bodywork, and organizational coaching. And suddenly, everything made sense.</p>
+            <p>The patterns I saw in organizations were the same patterns I saw in families. The dynamics that slowed down a leadership team were the same dynamics that played out in personal relationships. The tension people carried in meetings was the same tension they carried in their bodies.</p>
+            <p class="font-highlight text-xl italic text-tw-black">Travel Within was born from this understanding: you don't need to become a "better version of yourself." You need to become aware enough to stop repeating.</p>
+            <p>Today I work with individuals, couples, families, and organizations — in English and French — to bring the invisible into view and interrupt patterns at their source.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 bg-tw-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
+        <div class="text-center mb-16">
+          <h2 class="font-highlight text-4xl md:text-5xl tracking-tight font-medium text-tw-black mb-4">My Values</h2>
+          <p class="text-lg text-tw-gray-600 font-light">What guides this work.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-12">
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-tw-green/10 flex items-center justify-center">
+              <i data-lucide="eye" class="w-7 h-7 stroke-[1.5] text-tw-green"></i>
+            </div>
+            <h3 class="text-2xl tracking-tight font-medium text-tw-black mb-3">Clarity</h3>
+            <p class="text-base text-tw-gray-600 font-light">See what's actually there, not what you wish was there. The truth is kinder than the pattern.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-tw-purple/10 flex items-center justify-center">
+              <i data-lucide="zap" class="w-7 h-7 stroke-[1.5] text-tw-purple"></i>
+            </div>
+            <h3 class="text-2xl tracking-tight font-medium text-tw-black mb-3">Courage</h3>
+            <p class="text-base text-tw-gray-600 font-light">This work asks something of you. Real change requires the willingness to look where it's uncomfortable.</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-tw-yellow/20 flex items-center justify-center">
+              <i data-lucide="heart" class="w-7 h-7 stroke-[1.5] text-tw-black"></i>
+            </div>
+            <h3 class="text-2xl tracking-tight font-medium text-tw-black mb-3">Freedom</h3>
+            <p class="text-base text-tw-gray-600 font-light">The goal is not perfection. It's the freedom to stop repeating — and to choose differently.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <CTASection
+      heading="Ready to break your patterns?"
+      subtext="Let's find where they live and interrupt them at the root."
+      ctaText="Book Your Session"
+      ctaLink="/work-with-me"
+    />
+  </main>
+  <Footer />
+</Layout>

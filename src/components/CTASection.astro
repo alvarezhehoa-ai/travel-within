@@ -1,0 +1,25 @@
+---
+export interface Props {
+  heading?: string;
+  subtext?: string;
+  ctaText?: string;
+  ctaLink?: string;
+  bgClass?: string;
+}
+const { heading = 'Begin your journey.', subtext = 'Ready to stop repeating? Book your session and start seeing what\'s actually running your life.', ctaText = 'Book Your Session', ctaLink = '#contact', bgClass = 'bg-tw-gray-100' } = Astro.props;
+---
+<section class={`py-32 ${bgClass} text-center px-6`} id="contact">
+  <div class="max-w-3xl mx-auto flex flex-col items-center">
+    <div class="w-16 h-16 mb-8 text-tw-green">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" class="w-full h-full">
+        <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        <circle cx="12" cy="12" r="4"></circle>
+      </svg>
+    </div>
+    <h2 class="font-highlight text-5xl md:text-7xl tracking-tighter font-medium text-tw-black mb-6">{heading}</h2>
+    <p class="text-xl text-tw-gray-600 mb-10 font-light">{subtext}</p>
+    <a href={ctaLink} class="bg-tw-green text-white px-10 py-5 rounded-full inline-flex items-center gap-3 font-normal text-lg hover:bg-tw-green/90 transition-colors group">
+      {ctaText} <i data-lucide="arrow-right" class="w-5 h-5 stroke-[1.5] group-hover:translate-x-1 transition-transform"></i>
+    </a>
+  </div>
+</section>
