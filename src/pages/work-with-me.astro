@@ -7,14 +7,18 @@ import CTASection from '../components/CTASection.astro';
 <Layout title="Work With Me | Travel Within">
   <Header />
   <main>
-    <section class="relative min-h-screen pt-32 lg:pt-40 pb-24 overflow-hidden flex flex-col justify-center">
-      <div class="max-w-screen-2xl mx-auto px-6 md:px-12 w-full">
-        <div class="max-w-3xl">
-          <h1 class="font-highlight text-5xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tighter font-medium text-tw-black mb-8">
-            You don't need more insight.<br />You need to stop repeating<br />what's not working.
+    <section class="relative min-h-screen pt-32 lg:pt-40 pb-24 overflow-hidden flex flex-col justify-center bg-tw-black">
+      <img src="/images/work-with-me-hero.jpg" alt="Work with me" class="absolute inset-0 w-full h-full object-contain object-left-center opacity-100" />
+      <div class="absolute inset-0 bg-gradient-to-r from-tw-black/10 via-tw-black/5 to-tw-black/55"></div>
+      <div class="relative z-10 max-w-screen-2xl mx-auto px-6 md:px-12 w-full grid lg:grid-cols-12">
+        <div class="lg:col-start-7 lg:col-span-6 max-w-4xl ml-auto text-white">
+          <h1 class="font-highlight text-[40px] md:text-[52px] lg:text-[64px] leading-[1.05] tracking-tighter font-medium mb-8">
+            <span class="block whitespace-nowrap">You don't need more insight.</span>
+            <span class="block whitespace-nowrap">You need to stop repeating</span>
+            <span class="block whitespace-nowrap">what's not working.</span>
           </h1>
-          <div class="pl-6 border-l-[1.5px] border-tw-gray-200 mb-12">
-            <p class="text-xl text-tw-gray-600 font-light leading-relaxed">
+          <div class="pl-6 border-l-[1.5px] border-white/35 mb-12">
+            <p class="text-[22px] text-white/85 font-light leading-relaxed">
               I work on patterns — wherever they show up: in your body, your relationships, and your work.
             </p>
           </div>
@@ -23,107 +27,111 @@ import CTASection from '../components/CTASection.astro';
     </section>
 
     <section class="py-24 bg-tw-gray-100">
-      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
-        <div class="text-center mb-16">
-          <h2 class="font-highlight text-4xl md:text-5xl tracking-tight font-medium text-tw-black mb-4">Break The Pattern — 3 Levels</h2>
-          <p class="text-lg text-tw-gray-600 font-light max-w-xl mx-auto">The work meets you wherever the pattern shows up.</p>
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 text-center">
+        <h2 class="font-highlight text-4xl md:text-5xl tracking-tight font-medium text-tw-black mb-4">Break The Pattern — 3 Levels</h2>
+        <p class="text-lg text-tw-gray-600 font-light max-w-xl mx-auto mb-10">The work meets you wherever the pattern shows up.</p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#level-1" class="bg-white border border-tw-purple text-tw-purple rounded-full px-8 py-4 text-base font-medium hover:bg-tw-purple hover:text-white transition-colors w-full sm:w-48 text-center">Individual</a>
+          <a href="#level-2" class="bg-white border border-tw-purple text-tw-purple rounded-full px-8 py-4 text-base font-medium hover:bg-tw-purple hover:text-white transition-colors w-full sm:w-48 text-center">Relationships</a>
+          <a href="#level-3" class="bg-white border border-tw-purple text-tw-purple rounded-full px-8 py-4 text-base font-medium hover:bg-tw-purple hover:text-white transition-colors w-full sm:w-48 text-center">Organizations</a>
         </div>
+      </div>
+    </section>
 
-        <div class="space-y-24">
-          <!-- Level 1 -->
-          <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div>
-              <span class="text-xs font-medium tracking-widest uppercase text-tw-green mb-4 block">Level 1</span>
-              <h2 class="font-highlight text-4xl md:text-5xl tracking-tight font-medium text-tw-black mb-4">Individual</h2>
-              <p class="text-base text-tw-gray-600 mb-6 font-light italic">Where it lives in your body and your daily life</p>
-              <p class="text-lg text-tw-gray-600 mb-6 font-light">You know something needs to change. Maybe you've known for a while. You've tried — with discipline, with willpower, with insight. And for a moment, something shifts. Then, quietly, you find yourself back in the same place.</p>
-              <p class="text-lg text-tw-gray-600 mb-6 font-light">The same exhaustion. The same reach for something that numbs. The same pressure you put on yourself that no one else even sees. Not because you're weak. But because the pattern runs deeper than behaviour — it lives in your body, in your nervous system, in ways that effort alone can't touch.</p>
-              <p class="text-lg font-highlight italic text-tw-black mb-8">You don't need more self-discipline. You need to understand what your body has been trying to solve — and why it keeps reaching for the same answers.</p>
-              <div class="mb-6">
-                <h4 class="text-sm font-medium tracking-widest uppercase text-tw-green mb-3">We work on</h4>
-                <div class="flex flex-wrap gap-2">
-                  {['Emotional loops', 'Addictive patterns', 'Internal imbalance', 'Body-held stress', 'Self-sabotage'].map(item => (
-                    <span class="bg-white border border-tw-gray-200 rounded-full px-4 py-1.5 text-sm text-tw-gray-600 font-light">{item}</span>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <h4 class="text-base font-medium text-tw-black mb-2">Break the Pattern (program)</h4>
-                <p class="text-sm text-tw-gray-600 font-light">Understand the loops driving your behaviour — and interrupt them at the root, not just at the surface.</p>
-              </div>
-              <div class="mt-4">
-                <h4 class="text-base font-medium text-tw-black mb-2">The Weave (body work)</h4>
-                <p class="text-sm text-tw-gray-600 font-light">Restore balance in your system so that real change becomes possible — not forced, but grounded.</p>
-              </div>
-            </div>
-            <div class="relative">
-              <img src="/images/blur-stuck.jpg" alt="Individual coaching" class="w-full aspect-[4/5] object-cover rounded-3xl" loading="lazy" />
-              <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-tw-yellow rounded-full hidden md:block"></div>
+    <section id="level-1" class="py-32 bg-tw-white scroll-mt-24">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div>
+          <span class="text-xs font-medium tracking-widest uppercase text-tw-green mb-4 block">Level 1</span>
+          <h2 class="font-highlight text-4xl md:text-5xl tracking-tight font-medium text-tw-black mb-4">Individual</h2>
+          <p class="text-base text-tw-gray-600 mb-6 font-light italic">Where it lives in your body and your daily life</p>
+          <p class="text-lg text-tw-gray-600 mb-6 font-light">You know something needs to change. Maybe you've known for a while. You've tried — with discipline, with willpower, with insight. And for a moment, something shifts. Then, quietly, you find yourself back in the same place.</p>
+          <p class="text-lg text-tw-gray-600 mb-6 font-light">The same exhaustion. The same reach for something that numbs. The same pressure you put on yourself that no one else even sees. Not because you're weak. But because the pattern runs deeper than behaviour — it lives in your body, in your nervous system, in ways that effort alone can't touch.</p>
+          <p class="text-lg font-highlight italic text-tw-black mb-8">You don't need more self-discipline. You need to understand what your body has been trying to solve — and why it keeps reaching for the same answers.</p>
+          <div class="mb-6">
+            <h4 class="text-sm font-medium tracking-widest uppercase text-tw-green mb-3">We work on</h4>
+            <div class="flex flex-wrap gap-2">
+              {['Emotional loops', 'Addictive patterns', 'Internal imbalance', 'Body-held stress', 'Self-sabotage'].map(item => (
+                <span class="bg-tw-gray-100 border border-tw-gray-200 rounded-full px-4 py-1.5 text-sm text-tw-gray-600 font-light">{item}</span>
+              ))}
             </div>
           </div>
+          <div>
+            <h4 class="text-base font-medium text-tw-black mb-2">Break the Pattern (program)</h4>
+            <p class="text-sm text-tw-gray-600 font-light">Understand the loops driving your behaviour — and interrupt them at the root, not just at the surface.</p>
+          </div>
+          <div class="mt-4">
+            <h4 class="text-base font-medium text-tw-black mb-2">The Weave (body work)</h4>
+            <p class="text-sm text-tw-gray-600 font-light">Restore balance in your system so that real change becomes possible — not forced, but grounded.</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="/images/freedom-and-perspective.png" alt="Individual coaching" class="w-full aspect-[4/5] object-cover rounded-3xl" loading="lazy" />
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-tw-yellow rounded-full hidden md:block"></div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Level 2 -->
-          <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div class="order-2 lg:order-1 relative">
-              <img src="/images/eloaportrait.jpg" alt="Relationship coaching" class="w-full aspect-[4/5] object-cover rounded-3xl" loading="lazy" />
-              <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-tw-purple rounded-full hidden md:block"></div>
-            </div>
-            <div class="order-1 lg:order-2">
-              <span class="text-xs font-medium tracking-widest uppercase text-tw-purple mb-4 block">Level 2</span>
-              <h2 class="font-highlight text-4xl md:text-5xl tracking-tight font-medium text-tw-black mb-4">Relationships</h2>
-              <p class="text-base text-tw-gray-600 mb-6 font-light italic">Where it repeats in your family and connections</p>
-              <p class="text-lg text-tw-gray-600 mb-6 font-light">You look at the people around you and something feels familiar — in a way that has nothing to do with them. A conflict that echoes one you've had before. A role you keep stepping into without choosing it. Different people. Same story.</p>
-              <p class="text-lg font-highlight italic text-tw-black mb-8">What repeats in our relationships rarely starts with us. Often, it begins long before — in the family system we come from, in loyalties we never consciously agreed to carry.</p>
-              <div class="mb-6">
-                <h4 class="text-sm font-medium tracking-widest uppercase text-tw-purple mb-3">We work on</h4>
-                <div class="flex flex-wrap gap-2">
-                  {['Family patterns', 'Invisible loyalties', 'Relational dynamics', 'Belonging & exclusion', 'Inherited roles'].map(item => (
-                    <span class="bg-white border border-tw-gray-200 rounded-full px-4 py-1.5 text-sm text-tw-gray-600 font-light">{item}</span>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <h4 class="text-base font-medium text-tw-black mb-2">Individual constellations</h4>
-                <p class="text-sm text-tw-gray-600 font-light">Reveal what you're unconsciously repeating — and restore the order that allows you to move forward.</p>
-              </div>
-              <div class="mt-4">
-                <h4 class="text-base font-medium text-tw-black mb-2">Group constellations</h4>
-                <p class="text-sm text-tw-gray-600 font-light">Experience and shift patterns at a deeper systemic level, held by the presence of a group field.</p>
-              </div>
+    <section id="level-2" class="py-32 bg-tw-gray-100 scroll-mt-24">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="order-2 lg:order-1 relative">
+          <img src="/images/zhao-chen-AAkml81meqs-unsplash.jpg" alt="Relationship coaching" class="w-full aspect-[4/5] object-cover rounded-3xl" loading="lazy" />
+          <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-tw-green rounded-full hidden md:block"></div>
+        </div>
+        <div class="order-1 lg:order-2">
+          <span class="text-xs font-medium tracking-widest uppercase text-tw-purple mb-4 block">Level 2</span>
+          <h2 class="font-highlight text-4xl md:text-5xl tracking-tight font-medium text-tw-black mb-4">Relationships</h2>
+          <p class="text-base text-tw-gray-600 mb-6 font-light italic">Where it repeats in your family and connections</p>
+          <p class="text-lg text-tw-gray-600 mb-6 font-light">You look at the people around you and something feels familiar — in a way that has nothing to do with them. A conflict that echoes one you've had before. A role you keep stepping into without choosing it. Different people. Same story.</p>
+          <p class="text-lg font-highlight italic text-tw-black mb-8">What repeats in our relationships rarely starts with us. Often, it begins long before — in the family system we come from, in loyalties we never consciously agreed to carry.</p>
+          <div class="mb-6">
+            <h4 class="text-sm font-medium tracking-widest uppercase text-tw-purple mb-3">We work on</h4>
+            <div class="flex flex-wrap gap-2">
+              {['Family patterns', 'Invisible loyalties', 'Relational dynamics', 'Belonging & exclusion', 'Inherited roles'].map(item => (
+                <span class="bg-white border border-tw-gray-200 rounded-full px-4 py-1.5 text-sm text-tw-gray-600 font-light">{item}</span>
+              ))}
             </div>
           </div>
+          <div>
+            <h4 class="text-base font-medium text-tw-black mb-2">Individual constellations</h4>
+            <p class="text-sm text-tw-gray-600 font-light">Reveal what you're unconsciously repeating — and restore the order that allows you to move forward.</p>
+          </div>
+          <div class="mt-4">
+            <h4 class="text-base font-medium text-tw-black mb-2">Group constellations</h4>
+            <p class="text-sm text-tw-gray-600 font-light">Experience and shift patterns at a deeper systemic level, held by the presence of a group field.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- Level 3 -->
-          <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div>
-              <span class="text-xs font-medium tracking-widest uppercase text-tw-yellow bg-tw-black inline-block px-3 py-1 rounded mb-4" style="color:#000;background:#FFE01D;">Level 3</span>
-              <h2 class="font-highlight text-4xl md:text-5xl tracking-tight font-medium text-tw-black mb-4">Organizations</h2>
-              <p class="text-base text-tw-gray-600 mb-6 font-light italic">Where it plays out in teams, leadership, and the systems you operate in</p>
-              <p class="text-lg text-tw-gray-600 mb-6 font-light">You see it clearly. The dynamic that slows everything down. The decision that keeps not being made. The meeting that covers the same ground. The project that stalls in exactly the same place as the last one.</p>
-              <p class="text-lg text-tw-gray-600 mb-6 font-light">You've named it. You've tried to shift it. And yet — it persists. Not because you're wrong about what needs to change. But because what's driving it isn't visible yet.</p>
-              <p class="text-lg font-highlight italic text-tw-black mb-8">Most organizational problems are not strategic failures. They are systemic patterns that no one has been able to see from the inside.</p>
-              <div class="mb-6">
-                <h4 class="text-sm font-medium tracking-widest uppercase text-tw-green mb-3">We work on</h4>
-                <div class="flex flex-wrap gap-2">
-                  {['Recurring team dynamics', 'Leadership blind spots', 'Systemic misalignment', 'Change resistance', 'Invisible power dynamics'].map(item => (
-                    <span class="bg-white border border-tw-gray-200 rounded-full px-4 py-1.5 text-sm text-tw-gray-600 font-light">{item}</span>
-                  ))}
-                </div>
-              </div>
-              <div>
-                <h4 class="text-base font-medium text-tw-black mb-2">Systemic coaching for organizations</h4>
-                <p class="text-sm text-tw-gray-600 font-light">Bring the hidden dynamics of your system into view — so leaders can act on what's actually there.</p>
-              </div>
-              <div class="mt-4">
-                <h4 class="text-base font-medium text-tw-black mb-2">Project & change support</h4>
-                <p class="text-sm text-tw-gray-600 font-light">For transitions and transformations that keep hitting the same wall. We find where the pattern lives and interrupt it at the source.</p>
-              </div>
-            </div>
-            <div class="relative">
-              <img src="/images/freedom.png" alt="Organizational coaching" class="w-full aspect-[4/5] object-cover rounded-3xl" loading="lazy" />
-              <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-tw-yellow rounded-full hidden md:block"></div>
+    <section id="level-3" class="py-32 bg-tw-white scroll-mt-24">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div>
+          <span class="text-xs font-medium tracking-widest uppercase inline-block px-3 py-1 rounded mb-4" style="color:#000;background:#FFE01D;">Level 3</span>
+          <h2 class="font-highlight text-4xl md:text-5xl tracking-tight font-medium text-tw-black mb-4">Organizations</h2>
+          <p class="text-base text-tw-gray-600 mb-6 font-light italic">Where it plays out in teams, leadership, and the systems you operate in</p>
+          <p class="text-lg text-tw-gray-600 mb-6 font-light">You see it clearly. The dynamic that slows everything down. The decision that keeps not being made. The meeting that covers the same ground. The project that stalls in exactly the same place as the last one.</p>
+          <p class="text-lg text-tw-gray-600 mb-6 font-light">You've named it. You've tried to shift it. And yet — it persists. Not because you're wrong about what needs to change. But because what's driving it isn't visible yet.</p>
+          <p class="text-lg font-highlight italic text-tw-black mb-8">Most organizational problems are not strategic failures. They are systemic patterns that no one has been able to see from the inside.</p>
+          <div class="mb-6">
+            <h4 class="text-sm font-medium tracking-widest uppercase text-tw-green mb-3">We work on</h4>
+            <div class="flex flex-wrap gap-2">
+              {['Recurring team dynamics', 'Leadership blind spots', 'Systemic misalignment', 'Change resistance', 'Invisible power dynamics'].map(item => (
+                <span class="bg-tw-gray-100 border border-tw-gray-200 rounded-full px-4 py-1.5 text-sm text-tw-gray-600 font-light">{item}</span>
+              ))}
             </div>
           </div>
+          <div>
+            <h4 class="text-base font-medium text-tw-black mb-2">Systemic coaching for organizations</h4>
+            <p class="text-sm text-tw-gray-600 font-light">Bring the hidden dynamics of your system into view — so leaders can act on what's actually there.</p>
+          </div>
+          <div class="mt-4">
+            <h4 class="text-base font-medium text-tw-black mb-2">Project & change support</h4>
+            <p class="text-sm text-tw-gray-600 font-light">For transitions and transformations that keep hitting the same wall. We find where the pattern lives and interrupt it at the source.</p>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="/images/sable-flow-T74mVg__F_k-unsplash.jpg" alt="Organizational coaching" class="w-full aspect-[4/5] object-cover rounded-3xl" loading="lazy" />
+          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-tw-purple rounded-full hidden md:block"></div>
         </div>
       </div>
     </section>
