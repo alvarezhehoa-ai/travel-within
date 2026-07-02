@@ -22,7 +22,17 @@ const { title = 'Travel Within | Break The Patterns', description = 'Systemic co
     <slot />
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
-      lucide.createIcons();
+      const createLucideIcons = () => {
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
+      };
+
+      if (document.readyState === 'complete') {
+        createLucideIcons();
+      } else {
+        window.addEventListener('load', createLucideIcons);
+      }
     </script>
   </body>
 </html>
