@@ -1,0 +1,377 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const paymentLink = 'https://travelwithin.kneo.me/shop/view/G1522FF6';
+
+const weeks = [
+  {
+    title: 'Semaine 1 - Conscience',
+    text: 'Tu observes ton pattern tabac, tes moments obligatoires, tes triggers et ce que la cigarette nourrit vraiment chez toi.',
+  },
+  {
+    title: 'Semaine 2 - Inconscient',
+    text: 'Tu travailles le lien plus profond au tabac, les émotions, les résistances et le contrat inconscient qui maintient l\'emprise.',
+  },
+  {
+    title: 'Semaine 3 - Identité',
+    text: 'Tu ancres une nouvelle identité, tu apprends à rester avec ce qui se passe en toi, et tu ouvres un futur où la cigarette n\'a plus la même place.',
+  },
+];
+
+const offerDetails = [
+  '3 semaines de programme accompagné',
+  '4 appels de groupe d\'1h sur Zoom, en exclusivité pour le lancement',
+  'Vidéos courtes et exercices personnels',
+  'Visualisations guidées à écouter chaque semaine',
+  'Groupe Facebook privé pour le soutien et les questions',
+  'Accès aux contenus à vie*',
+];
+
+const faq = [
+  {
+    q: 'Est-ce que ça marche si je fume peu ?',
+    a: 'Oui. Ce qui compte, ce n\'est pas le nombre de cigarettes que tu fumes. C\'est si tu as vraiment envie d\'arrêter et si tu es prêt·e à t\'en donner les moyens. Même une seule cigarette peut avoir trop de pouvoir si elle s\'impose à toi.',
+  },
+  {
+    q: 'Est-ce que ça marche si je fume beaucoup ?',
+    a: 'Oui. Le programme ne s\'adresse pas à un quota de cigarettes, mais à une personne qui sent que c\'est le moment de se libérer.',
+  },
+  {
+    q: 'Est-ce que je dois arrêter dès le premier jour ?',
+    a: 'Non. Je ne vais pas te demander d\'arrêter dès le premier jour, ni décider à ta place du moment où tu dois poser ta dernière cigarette. Le programme est conçu pour que la cigarette devienne progressivement moins nécessaire.',
+  },
+  {
+    q: 'Et si je rate un appel ?',
+    a: 'C\'est la fin des haricots. Non, je plaisante. Si tu rates un appel, il y aura un replay disponible. L\'essentiel est surtout de suivre le programme sérieusement : regarder les vidéos, faire les exercices, écouter les audios et rester impliqué·e.',
+  },
+  {
+    q: 'Et si je refume pendant le programme ?',
+    a: 'Catastrophe. C\'est encore la fin des haricots. Toujours pas, je plaisante. Si tu refumes pendant le programme, tu continues. Ça arrive à tout le monde de trébucher. Il suffit de continuer à marcher pour arriver au bout du chemin.',
+  },
+  {
+    q: 'Est-ce religieux ou spirituel ?',
+    a: 'Religieux, non. Dogmatique, non plus. Un peu perché, oui, j\'avoue. Je vais te partager un point de vue animiste, chamanique et spirituel. On va rencontrer ton animal allié et discuter avec l\'esprit de la plante Tabac. Si c\'est trop pour toi, c\'est OK, mais ce programme n\'est probablement pas pour toi.',
+  },
+  {
+    q: 'Et si je n\'arrive pas à visualiser ?',
+    a: 'Une visualisation guidée ne veut pas dire que tu dois voir un film en HD dans ta tête. Certaines personnes voient des images, d\'autres ressentent, savent, entendent ou imaginent de manière plus abstraite. L\'important, c\'est de te laisser guider avec ce qui est disponible pour toi.',
+  },
+  {
+    q: 'Combien de temps ça prend par semaine ?',
+    a: 'Au quotidien, prévois à peu près autant de minutes que de cigarettes que tu fumes par jour. Si tu fumes 5 cigarettes par jour, compte environ 5 minutes. Si tu fumes 20 cigarettes, compte plutôt 20 minutes. Le week-end, prévois environ 1h pour la visualisation guidée et 1h pour l\'appel de groupe.',
+  },
+  {
+    q: 'Est-ce que je dois parler de choses intimes dans le groupe ?',
+    a: 'Non. C\'est toi qui choisis si tu parles, et de quoi tu parles. Le groupe est là pour te soutenir dans ta démarche, partager des expériences, poser des questions et avancer ensemble.',
+  },
+];
+
+const otherTestimonials = [
+  {
+    name: 'Magali',
+    quote: 'L’approche que tu as proposée m’a vraiment convenu et a vraiment tout changé. Aujourd’hui, je me sens légère, libérée de ce poids qui me gâchait la vie.',
+  },
+  {
+    name: 'Laura',
+    quote: 'Ça m’a vraiment aidée à aimer mon démon, le comprendre et prendre soin de lui, au lieu de le rejeter et empirer l’addiction.',
+  },
+  {
+    name: 'Céline',
+    quote: 'Après le coaching, je vis et je ne compte plus retourner en mode survie.',
+  },
+  {
+    name: 'Nathalie',
+    quote: 'Travailler l’addiction sans travailler sur l’identité et l’énergie, je pense vraiment qu’on loupe un gros pan du boulot.',
+  },
+];
+---
+<Layout
+  lang="fr"
+  title="Break The Pattern - Tabac | Travel Within"
+  description="3 semaines pour te libérer de l'emprise du tabac avec une approche holistique qui rend la cigarette obsolète. Cohorte pilote du 20 septembre."
+>
+  <Header ctaText="Je rejoins la cohorte" ctaHref="#contact" />
+  <main>
+    <section class="min-h-screen pt-36 pb-24 md:pt-44 bg-tw-gray-100 relative overflow-hidden">
+      <div class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-tw-green via-tw-yellow to-tw-purple"></div>
+      <div class="max-w-screen-2xl mx-auto px-6 md:px-12 grid lg:grid-cols-[1.05fr_0.95fr] gap-14 lg:gap-24 items-center">
+        <div class="space-y-8">
+          <div class="inline-flex items-center gap-3">
+            <span class="w-8 h-[1px] bg-tw-green"></span>
+            <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Cohorte pilote - démarrage le 20 septembre</span>
+          </div>
+          <h1 class="font-highlight text-5xl md:text-7xl lg:text-8xl tracking-tight font-medium text-tw-black leading-[1.02]">
+            Break The Pattern - Tabac
+          </h1>
+          <p class="text-2xl md:text-3xl text-tw-black font-light leading-snug max-w-3xl">
+            3 semaines pour te libérer de l'emprise du tabac.
+          </p>
+          <p class="font-highlight text-3xl md:text-4xl text-tw-green leading-tight max-w-3xl">
+            Pour celles et ceux qui sentent que la cigarette devrait déjà appartenir au passé.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href={paymentLink} target="_blank" rel="noreferrer" class="inline-flex bg-tw-yellow text-tw-black px-10 py-5 rounded-full items-center justify-center gap-3 text-lg hover:bg-tw-yellow/80 transition-colors group font-medium">
+              <span class="text-base tracking-wide uppercase">Je rejoins la cohorte</span>
+              <i data-lucide="arrow-right" class="w-5 h-5 stroke-[1.5] group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="#details" class="inline-flex border border-tw-black text-tw-black px-10 py-5 rounded-full items-center justify-center text-lg hover:bg-tw-black hover:text-white transition-colors font-medium">
+              Voir le programme
+            </a>
+          </div>
+          <p class="text-base uppercase tracking-widest text-tw-gray-600">Prix de lancement : 47 € au lieu de 77 € - 20 places - inscriptions jusqu'au 19 septembre</p>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-6 bg-tw-yellow rounded-[3rem] rotate-3"></div>
+          <img src="/images/btp-tabac-hero.jpg" alt="Eloa Alvarez" class="relative w-full aspect-[4/5] object-cover rounded-[3rem] shadow-2xl" />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-14 lg:gap-24 items-start">
+        <div class="space-y-8">
+          <div class="inline-flex items-center gap-3">
+            <span class="w-8 h-[1px] bg-tw-green"></span>
+            <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Arrête de penser...</span>
+          </div>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium text-tw-black leading-[1.08]">
+            Je devrais pouvoir arrêter seul·e.
+          </h2>
+        </div>
+        <div class="space-y-6 text-xl text-tw-gray-600 font-light leading-relaxed">
+          <p><em>J'ai travaillé sur moi. J'ai pris conscience de plein de choses et je me connais bien. En plus, j'ai déjà réussi à réduire ma consommation. Donc je devrais réussir à arrêter seul·e.</em></p>
+          <p>Sauf que juste la conscience et la volonté ne suffisent pas à défaire un pattern. Surtout quand ce pattern ne vit pas seulement dans ta tête. Il est inscrit dans ton corps, tes rituels, tes émotions et ton identité.</p>
+          <p class="text-tw-black font-medium">Le problème n'est pas que tu manques de volonté. Le problème, c'est que la cigarette joue encore un rôle dans ton système.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-black text-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-14 lg:gap-24 items-start">
+        <div class="space-y-8">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-yellow">J'y suis presque, et pourtant...</span>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium leading-[1.08]">
+            Tu ne fumes peut-être pas beaucoup. Mais il y a encore, et toujours, cette cigarette qui s'impose.
+          </h2>
+        </div>
+        <div class="space-y-6 text-xl text-white/70 font-light leading-relaxed">
+          <p>Pas forcément au saut du lit, parce que tu n'es pas comme ça. Mais plus tard... avec le café, en arrivant au bureau, en sortant de la voiture, après le repas, entre deux rendez-vous ou juste avant d'aller dormir.</p>
+          <p>Tu peux parfois passer plusieurs heures sans fumer. Peut-être même toute une journée. Et pourtant, à un moment, il y a cette cigarette <strong class="text-white font-medium">obligatoire</strong>.</p>
+          <p class="font-highlight text-3xl md:text-4xl text-tw-yellow leading-tight">Trois cigarettes par jour, ce n'est pas grand-chose. Sauf quand ce n'est pas toi qui décides.</p>
+          <p>C'est comme une petite tache sur ton t-shirt blanc. Toute petite, pas vraiment dérangeante. Les autres ne la voient peut-être même pas. Mais toi, tu sais qu'elle est là.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-gray-100">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
+        <div class="relative order-2 lg:order-1">
+          <img src="/images/freedom-and-perspective.png" alt="Perspective et liberté" class="w-full aspect-[4/5] object-cover rounded-[3rem]" loading="lazy" />
+        </div>
+        <div class="space-y-6 text-xl text-tw-gray-600 font-light leading-relaxed order-1 lg:order-2">
+          <div class="inline-flex items-center gap-3 mb-4">
+            <span class="w-8 h-[1px] bg-tw-green"></span>
+            <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Pourquoi Break The Pattern - Tabac ?</span>
+          </div>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium text-tw-black leading-[1.08]">
+            Tu ne vas pas juste arrêter de fumer. Tu vas ne plus avoir besoin de fumer.
+          </h2>
+          <p>Quand on pense à la cigarette, on se voit fumer. On ne voit que le comportement. Mais le comportement, c'est seulement la pointe de l'iceberg : la partie visible du problème.</p>
+          <p>En réalité, c'est un pattern qui est inscrit dans tous tes corps : physique, mental, émotionnel et énergétique. Et tellement bien ancré, qu'il a même fini par devenir une partie de ton identité.</p>
+          <p>Imagine une mauvaise herbe.<br />Si tu la coupes, elle repousse.<br />La cigarette, ça fonctionne pareil.<br />Si tu coupes seulement le comportement, il revient.</p>
+          <p>Dans Break The Pattern - Tabac, on travaille sur l'entièreté du système : le sol, l'eau, les racines. On enlève tout ce qui nourrit la mauvaise herbe. Et la mauvaise herbe disparaît d'elle-même.</p>
+          <p class="text-tw-black font-medium">La cigarette sera devenue obsolète.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-white" id="details">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
+        <div class="max-w-5xl mb-16">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Le parcours</span>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium text-tw-black leading-[1.08] mt-6">
+            Ce que tu vas vivre pendant les 3 semaines
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          {weeks.map((week) => (
+            <article class="bg-tw-gray-100 rounded-[2rem] p-8 md:p-10 min-h-[300px] flex flex-col justify-between">
+              <h3 class="text-3xl tracking-tight font-medium text-tw-black mb-8">{week.title}</h3>
+              <p class="text-lg text-tw-gray-600 font-light leading-relaxed">{week.text}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-gray-100">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-[0.9fr_1.1fr] gap-14 lg:gap-24 items-start">
+        <div class="sticky top-32 space-y-8">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-green">La cohorte de septembre</span>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium text-tw-black leading-[1.08]">
+            Prix de lancement : 47 €
+          </h2>
+          <p class="text-xl text-tw-gray-600 font-light leading-relaxed">Au lieu de 77 €. Inscriptions ouvertes jusqu'au 19 septembre, dans la limite des 20 places disponibles.</p>
+          <a href={paymentLink} target="_blank" rel="noreferrer" class="inline-flex bg-tw-yellow text-tw-black px-10 py-5 rounded-full items-center gap-3 text-lg hover:bg-tw-yellow/80 transition-colors group font-medium">
+            <span class="text-base tracking-wide uppercase">Je rejoins la cohorte</span>
+            <i data-lucide="arrow-right" class="w-5 h-5 stroke-[1.5] group-hover:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+        <div class="space-y-8">
+          <div class="bg-white rounded-[2rem] p-8 md:p-10">
+            <h3 class="text-3xl tracking-tight font-medium text-tw-black mb-8">Inclus dans le programme</h3>
+            <ul class="grid md:grid-cols-2 gap-5">
+              {offerDetails.map((detail) => (
+                <li class="flex gap-3 text-lg text-tw-gray-600 font-light leading-relaxed">
+                  <i data-lucide="sparkle" class="w-5 h-5 text-tw-green shrink-0 mt-1 stroke-[1.5]"></i>
+                  <span>{detail}</span>
+                </li>
+              ))}
+            </ul>
+            <p class="text-sm text-tw-gray-600 font-light leading-relaxed mt-6">*Tant que le programme et le site existent, tu garderas tes accès.</p>
+          </div>
+          <div class="bg-tw-black text-white rounded-[2rem] p-8 md:p-10">
+            <h3 class="text-3xl tracking-tight font-medium mb-6">Les dates des appels</h3>
+            <p class="text-lg text-white/70 font-light leading-relaxed">Les appels de groupe ont lieu sur Zoom les 20 septembre, 27 septembre, 4 octobre et 11 octobre.</p>
+          </div>
+          <div class="bg-white rounded-[2rem] p-8 md:p-10">
+            <h3 class="text-3xl tracking-tight font-medium text-tw-black mb-6">Garantie "Satisfait ou Remboursé, sans question"</h3>
+            <p class="text-lg text-tw-gray-600 font-light leading-relaxed">À la fin du programme, si tu ne constates aucune amélioration dans ton rapport à la cigarette, je te rembourse 47 € moins les frais appliqués par les plateformes de paiement, soit environ 45 €.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
+        <div class="max-w-6xl mb-16">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Témoignages</span>
+          <h2 class="font-highlight text-4xl md:text-5xl lg:text-6xl tracking-tight font-medium text-tw-black leading-[1.08] mt-6 max-w-none">
+            Après 3 semaines, où en sont‑iels ?
+          </h2>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8">
+          <article class="space-y-5">
+            <div class="aspect-video rounded-[2rem] overflow-hidden bg-tw-black">
+              <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/reb98XKBtXM" title="Témoignage Laurent" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3 class="px-2 text-3xl font-medium text-tw-black">Laurent</h3>
+          </article>
+          <article class="space-y-5">
+            <div class="aspect-video rounded-[2rem] overflow-hidden bg-tw-black">
+              <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/Bu7PGZwACk8" title="Témoignage Mathilde" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3 class="px-2 text-3xl font-medium text-tw-black">Mathilde</h3>
+          </article>
+        </div>
+        <div class="mt-16">
+          <div class="max-w-3xl mb-8">
+            <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Ils ont aussi travaillé avec moi</span>
+            <h3 class="font-highlight text-2xl md:text-3xl tracking-tight font-medium text-tw-black leading-[1.08] mt-4">
+              D’autres retours sur l’accompagnement
+            </h3>
+          </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {otherTestimonials.map((testimonial) => (
+              <article class="bg-tw-gray-100 rounded-[1.5rem] p-5 flex flex-col gap-4">
+                <p class="text-base text-tw-gray-600 font-light leading-relaxed">“{testimonial.quote}”</p>
+                <p class="text-sm uppercase tracking-widest text-tw-green font-medium">{testimonial.name}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-gray-100">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-8">
+        <div class="bg-white rounded-[2rem] p-8 md:p-10">
+          <h2 class="text-3xl md:text-4xl tracking-tight font-medium text-tw-black mb-8">Ce programme n'est pas pour toi si...</h2>
+          <ul class="space-y-5 text-lg text-tw-gray-600 font-light leading-relaxed">
+            <li>Tu veux écouter deux audios et arrêter par magie.</li>
+            <li>Tu veux arrêter uniquement parce que quelqu'un d'autre te l'a demandé.</li>
+            <li>Tu n'as pas envie de tenir un journal, faire les exercices ou regarder ton fonctionnement autrement.</li>
+          </ul>
+        </div>
+        <div class="bg-tw-green text-white rounded-[2rem] p-8 md:p-10">
+          <h2 class="text-3xl md:text-4xl tracking-tight font-medium mb-8">Ce programme est pour toi si...</h2>
+          <ul class="space-y-5 text-lg text-white/80 font-light leading-relaxed">
+            <li>Une part de toi dit : là, c'est bon, ça suffit.</li>
+            <li>Tu es prêt·e à vivre une aventure avec toi-même.</li>
+            <li>Tu veux lâcher le fumeur ou la fumeuse en toi pour devenir autre chose.</li>
+            <li>Tu es prêt·e à t'impliquer pour que la cigarette appartienne enfin au passé.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mb-16">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Questions fréquentes</span>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium text-tw-black leading-[1.08] mt-6">Avant de rejoindre la cohorte</h2>
+        </div>
+        <div class="max-w-4xl space-y-4">
+          {faq.map((item) => (
+            <details class="group bg-tw-gray-100 rounded-[2rem] p-6 md:p-8">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-2xl tracking-tight font-medium text-tw-black">
+                <span>{item.q}</span>
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-tw-yellow text-tw-black transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-5 text-lg text-tw-gray-600 font-light leading-relaxed">{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-black text-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-[0.9fr_1.1fr] gap-14 lg:gap-24 items-start">
+        <div class="space-y-8 lg:sticky lg:top-32">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-yellow">Qui suis-je ?</span>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium leading-[1.08]">
+            Le tabac et moi... une histoire d'amour.
+          </h2>
+          <img src="/images/btp-tabac-about.jpg" alt="Eloa Alvarez" class="w-full aspect-[4/5] object-cover rounded-[3rem]" loading="lazy" />
+        </div>
+        <div class="space-y-6 text-xl text-white/70 font-light leading-relaxed">
+          <p>Ma première cigarette, j'avais huit ans. Je m'en rappelle encore. C'était une Kool Menthol. Elle m'a rendue toute chose.</p>
+          <p>Mais c'est à 15 ans, quand j'ai acheté mon premier paquet de Lucky Strike, que je suis vraiment devenue une fumeuse.</p>
+          <p>Et après, j'ai connu plusieurs années où je fumais sans même y penser. Mais jamais plus d'un paquet par jour. C'était ma petite fierté à moi.</p>
+          <p>Enfin, sauf en soirée...<br />Enfin, sauf en période d'exams...<br />Enfin, sauf en cas de gros stress...</p>
+          <p>Il y a eu aussi ces moments où je me disais que ce serait bien d'arrêter. Alors je décidais d'arrêter le lundi... Et je recommençais le mardi. Et après 12 lundis d'arrêt et 12 mardis de reprise, j'ai arrêté d'essayer d'arrêter.</p>
+          <p>Quand je suis tombée dans le chaudron du dev perso et de la spiritualité, quelque chose d'incroyable est arrivé : ma conscience s'est élevée.</p>
+          <p>Fini les cigarettes industrielles et leurs cochonneries chimiques.<br />Bonjour les roulées au tabac au nom enchanteur et sans additif.</p>
+          <p>Oui je fumais encore...<br />mais je fumais mieux<br />et je fumais moins !</p>
+          <p>3 à 5 cigarettes par jour. Petite joueuse ! Même mon médecin m'a dit : "0 ce serait mieux, mais il n'y a pas de quoi fouetter un chat."</p>
+          <p>En 2011, j'ai réalisé un de mes rêves de gosse : un trek à cheval de 500 km dans les montagnes sauvages du Kirghizstan. Et je me rappelle qu'une de mes préoccupations lors de ma préparation a été : combien de paquets dois-je emmener pour être sûre de ne pas manquer ?</p>
+          <p>Et cette question, je me la suis reposée avant chacune de mes grandes aventures.</p>
+          <p>Moi qui rêvais d'espace, de grand air et de liberté, je me voyais obligée de calculer et provisionner mon tabac. Et je me rappelle de cette petite anxiété inavouée qui venait me chatouiller les entrailles quand je commençais à rouler les dernières miettes de mon dernier paquet.</p>
+          <p>Quelle désagréable sensation de me sentir encore enchaînée par ça.</p>
+          <p>Il y a eu un moment où ça ne collait plus à qui j'étais devenue. Alors, j'ai dit STOP ! Mais ça n'a pas suffi. Je n'arrivais pas à descendre en dessous des 2 cigarettes par jour.</p>
+          <p>Il m'a fallu des années pour comprendre. Le problème n'était pas seulement le comportement de fumer. J'avais ancré un pattern, créé par mon système interne, par nécessité : j'en avais besoin.</p>
+          <p>C'est cette traversée qui m'a amenée à créer Break The Pattern : une approche qui travaille le corps, les émotions, les pensées, l'énergie et l'identité.</p>
+          <p class="font-highlight text-3xl md:text-4xl text-tw-yellow leading-tight">Et aujourd'hui, je ne fume plus. J'ai pris 0 kilo, utilisé 0 substitut nicotinique, ressenti 0 frustration.</p>
+          <p>Et surtout, j'ai redonné au Tabac sa place de plante sacrée et je ne me suis jamais sentie aussi libre dans mes aventures.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-yellow" id="contact">
+      <div class="max-w-screen-md mx-auto px-6 md:px-12 text-center space-y-8">
+        <span class="text-sm font-medium tracking-widest uppercase text-tw-black/70">20 places - inscriptions jusqu'au 19 septembre</span>
+        <h2 class="font-highlight text-5xl md:text-7xl tracking-tight font-medium text-tw-black leading-[1.05]">
+          Si tu sens que c'est maintenant, rejoins la cohorte.
+        </h2>
+        <p class="text-xl text-tw-black/70 font-light leading-relaxed">On démarre le 20 septembre. Prix de lancement : 47 € au lieu de 77 €.</p>
+        <a href={paymentLink} target="_blank" rel="noreferrer" class="inline-flex bg-tw-black text-white px-10 py-5 rounded-full items-center justify-center gap-3 text-lg hover:bg-tw-green transition-colors group font-medium">
+          <span class="text-base tracking-wide uppercase">Je rejoins la cohorte</span>
+          <i data-lucide="arrow-right" class="w-5 h-5 stroke-[1.5] group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

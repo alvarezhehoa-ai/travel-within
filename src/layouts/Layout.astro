@@ -2,11 +2,12 @@
 export interface Props {
   title?: string;
   description?: string;
+  lang?: string;
 }
-const { title = 'Travel Within | Break The Patterns', description = 'Systemic coaching to break the patterns that keep you repeating.' } = Astro.props;
+const { title = 'Travel Within | Break The Patterns', description = 'Systemic coaching to break the patterns that keep you repeating.', lang = 'en' } = Astro.props;
 ---
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang={lang} class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
