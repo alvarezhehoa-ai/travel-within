@@ -1,0 +1,366 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const paymentLink = '#contact';
+const chfPaymentLink = '#contact';
+
+const weeks = [
+  {
+    title: 'Semaine 1 - Conscience',
+    text: 'Tu observes ton pattern sucre, tes moments automatiques, tes triggers et ce que le sucre nourrit vraiment chez toi.',
+  },
+  {
+    title: 'Semaine 2 - Inconscient',
+    text: 'Tu travailles le lien plus profond au sucre, les émotions, les résistances et le contrat inconscient qui maintient l\'emprise.',
+  },
+  {
+    title: 'Semaine 3 - Identité',
+    text: 'Tu lâches l\'identité de bouche à sucre, de gourmande ou de femme qui manque de volonté, et tu ancres une nouvelle version de toi.',
+  },
+];
+
+const offerDetails = [
+  '3 semaines de programme',
+  '4 appels de groupe d\'1h sur Zoom, en exclusivité pour le lancement',
+  'Vidéos courtes et exercices personnels',
+  'Visualisations guidées à écouter chaque semaine',
+  'Groupe Facebook privé pour le soutien et les questions',
+  'Accès aux contenus à vie*',
+];
+
+const faq = [
+  {
+    q: 'Est-ce que je dois arrêter le sucre dès le premier jour ?',
+    a: 'Non. Le programme n\'est pas une nouvelle période de restriction. On avance progressivement pour comprendre pourquoi le sucre a autant de pouvoir, jusqu\'à ce qu\'il devienne moins nécessaire.',
+  },
+  {
+    q: 'Est-ce que ça marche si je ne mange pas tant de sucre que ça ?',
+    a: 'Oui. Ce qui compte, ce n\'est pas la quantité de sucre. C\'est le moment où tu avais décidé non, et où tu le fais quand même. Même un seul biscuit peut prendre trop de place si ce n\'est plus toi qui décides.',
+  },
+  {
+    q: 'Est-ce que je vais devoir ne plus jamais manger de dessert ?',
+    a: 'Non. L\'objectif n\'est pas de te couper du plaisir. L\'objectif est que tu puisses manger un dessert parce que tu le choisis vraiment, pas parce que tu cherches à calmer une tension, une honte ou une fatigue.',
+  },
+  {
+    q: 'Et si je mange du sucre pendant le programme ?',
+    a: 'Tu continues. Ce n\'est pas une rechute à dramatiser, c\'est une information à écouter. Le programme sert justement à comprendre ce qui se passe quand l\'ancien pattern revient.',
+  },
+  {
+    q: 'Et si je rate un appel ?',
+    a: 'Si tu rates un appel, il y aura un replay disponible. L\'essentiel est surtout de suivre le programme sérieusement : regarder les vidéos, faire les exercices, écouter les audios et rester impliquée.',
+  },
+  {
+    q: 'Est-ce religieux ou spirituel ?',
+    a: 'Religieux, non. Dogmatique, non plus. Un peu perché, oui, j\'avoue. On va travailler avec une approche intérieure, symbolique et énergétique. On va aller chercher un allié et rencontrer l\'esprit du sucre. Si c\'est trop pour toi, c\'est OK, mais ce programme n\'est probablement pas pour toi.',
+  },
+  {
+    q: 'Et si je n\'arrive pas à visualiser ?',
+    a: 'Une visualisation guidée ne veut pas dire que tu dois voir un film en HD dans ta tête. Certaines personnes voient des images, d\'autres ressentent, savent, entendent ou imaginent de manière plus abstraite. L\'important, c\'est de te laisser guider avec ce qui est disponible pour toi.',
+  },
+  {
+    q: 'Combien de temps ça prend par semaine ?',
+    a: 'Prévois 5-10 minutes par jour pour le journaling, environ 1h pour la visualisation guidée, et 1h pour l\'appel de groupe. Le programme est pensé pour s\'intégrer dans une vraie vie, pas pour devenir une contrainte de plus.',
+  },
+  {
+    q: 'Est-ce que je dois parler de choses intimes dans le groupe ?',
+    a: 'Non. C\'est toi qui choisis si tu parles, et de quoi tu parles. Le groupe est là pour te soutenir dans ta démarche, partager des expériences, poser des questions et avancer ensemble.',
+  },
+];
+
+const sugarTestimonials = [
+  {
+    name: 'Magali',
+    quote: 'Aujourd\'hui, je mange encore du sucre, mais c\'est vraiment par plaisir et non pour m\'auto-saboter. Aujourd\'hui je me sens légère, libérée de ce poids qui me gâchait la vie.',
+  },
+  {
+    name: 'Laura',
+    quote: 'Ça m\'a vraiment aidée à aimer mon clown, le comprendre et prendre soin de lui, au lieu de le rejeter, le renier et empirer l\'addiction.',
+  },
+  {
+    name: 'L.',
+    quote: 'Je n\'associe plus du tout de choses positives avec le fait de voir du sucre ou d\'en consommer. J\'ai déjà perdu trois kilos tranquillement et je suis super contente.',
+  },
+];
+---
+<Layout
+  lang="fr"
+  title="Break The Pattern - Sucre | Travel Within"
+  description="3 semaines pour te libérer de l'emprise du sucre et retrouver l'équilibre avec une approche holistique qui rend le sucre obsolète comme mécanisme de réconfort. Cohorte pilote de l'équinoxe."
+>
+  <Header ctaText="Je rejoins la cohorte" ctaHref={paymentLink} />
+  <main>
+    <section class="min-h-screen pt-36 pb-24 md:pt-44 bg-tw-gray-100 relative overflow-hidden">
+      <div class="absolute inset-x-0 top-0 h-2 bg-gradient-to-r from-tw-green via-tw-yellow to-tw-purple"></div>
+      <div class="max-w-screen-2xl mx-auto px-6 md:px-12 grid lg:grid-cols-[1.05fr_0.95fr] gap-14 lg:gap-24 items-center">
+        <div class="space-y-8">
+          <div class="inline-flex items-center gap-3">
+            <span class="w-8 h-[1px] bg-tw-green"></span>
+            <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Cohorte pilote - démarrage le 22 septembre</span>
+          </div>
+          <h1 class="font-highlight text-5xl md:text-7xl lg:text-8xl tracking-tight font-medium text-tw-black leading-[1.02]">
+            Break The Pattern - Sucre
+          </h1>
+          <p class="text-2xl md:text-3xl text-tw-black font-light leading-snug max-w-3xl">
+            3 semaines pour te libérer de l'emprise du sucre et retrouver l'équilibre.
+          </p>
+          <p class="font-highlight text-3xl md:text-4xl text-tw-green leading-tight max-w-3xl">
+            Pour celles qui sentent que le sucre prend trop de place dans leur vie et dans leur tête.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href={paymentLink} class="inline-flex bg-tw-yellow text-tw-black px-10 py-5 rounded-full items-center justify-center gap-3 text-lg hover:bg-tw-yellow/80 transition-colors group font-medium">
+              <span class="text-base tracking-wide uppercase">Je rejoins la cohorte</span>
+              <i data-lucide="arrow-right" class="w-5 h-5 stroke-[1.5] group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="#details" class="inline-flex border border-tw-black text-tw-black px-10 py-5 rounded-full items-center justify-center text-lg hover:bg-tw-black hover:text-white transition-colors font-medium">
+              Voir le programme
+            </a>
+          </div>
+          <p class="text-base uppercase tracking-widest text-tw-gray-600">Prix de lancement : 47 € au lieu de 77 € - inscriptions jusqu'au 21 septembre</p>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-6 bg-tw-yellow rounded-[3rem] rotate-3"></div>
+          <img src="/images/btp-sucre-hero.jpg" alt="Eloa Alvarez" class="relative w-full aspect-[4/5] object-cover rounded-[3rem] shadow-2xl" />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-14 lg:gap-24 items-start">
+        <div class="space-y-8">
+          <div class="inline-flex items-center gap-3">
+            <span class="w-8 h-[1px] bg-tw-green"></span>
+            <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Arrête de penser...</span>
+          </div>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium text-tw-black leading-[1.08]">
+            Je devrais pouvoir résister. J'ai juste besoin d'un peu plus de volonté.
+          </h2>
+        </div>
+        <div class="space-y-6 text-xl text-tw-gray-600 font-light leading-relaxed">
+          <p><em>Je fais plutôt attention à ce que je mange. Et je mange plutôt sainement. Je ne me gave pas. C'est juste un carré de chocolat en plus, une moitié de biscuit que l'enfant n'a pas fini au goûter, un dessert qui m'a fait de l'oeil au restaurant.</em></p>
+          <p>Sauf que ce n'est pas cette petite douceur accordée qui te fait le plus mal. C'est le moment où tu t'étais dit "non", et où tu l'as mangé quand même. C'est le moment où tu sens que tu viens de remettre un coup de marteau dans le respect que tu as pour toi.</p>
+          <p class="text-tw-black font-medium">Le problème n'est pas que tu manques de volonté. Le problème, c'est que le sucre joue encore un rôle dans ton système.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-black text-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-14 lg:gap-24 items-start">
+        <div class="space-y-8">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-yellow">Ce n'est pas grand-chose, et pourtant...</span>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium leading-[1.08]">
+            Tu ne manges peut-être pas tant de sucre. Mais il y a encore et toujours ces petits craquages qui arrivent, malgré toutes tes bonnes résolutions.
+          </h2>
+        </div>
+        <div class="space-y-6 text-xl text-white/70 font-light leading-relaxed">
+          <p>Le pain au chocolat ramené le matin alors que tu avais prévu un petit-déjeuner simple. Le cookie dans la vitrine après ta salade. Le demi-biscuit de Loulou que tu finis parce qu'on ne va pas jeter quand même.</p>
+          <p>Et puis le restaurant. Tu avais dit : pas de dessert ce soir. Mais le tiramisu a l'air incroyable... Tu veux partager mais ton mari reste sur ses sempiternelles profiteroles, alors tant pis, tu le mangeras toute seule ce tiramisu.</p>
+          <p class="font-highlight text-3xl md:text-4xl text-tw-yellow leading-tight">Un gâteau, ce n'est pas grand-chose. Sauf quand ce n'est plus toi qui décides.</p>
+          <p>À force, ton corps te le rappelle. Le pantalon ferme moins bien, la jupe serre à la taille, le t-shirt moule un peu trop le ventre. Et au fond de toi, tu sais que ce ne sont pas des kilos de gavage. Ce sont des kilos émotionnels.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-gray-100">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-14 lg:gap-24 items-center">
+        <div class="relative order-2 lg:order-1">
+          <img src="/images/freedom-and-perspective.png" alt="Perspective et liberté" class="w-full aspect-[4/5] object-cover rounded-[3rem]" loading="lazy" />
+        </div>
+        <div class="space-y-6 text-xl text-tw-gray-600 font-light leading-relaxed order-1 lg:order-2">
+          <div class="inline-flex items-center gap-3 mb-4">
+            <span class="w-8 h-[1px] bg-tw-green"></span>
+            <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Pourquoi Break The Pattern - Sucre ?</span>
+          </div>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium text-tw-black leading-[1.08]">
+            Tu ne vas pas juste arrêter le sucre. Tu vas ne plus avoir besoin du sucre.
+          </h2>
+          <p>Quand on pense au sucre, on se voit manger. On ne voit que le comportement. Mais le comportement, c'est seulement la pointe de l'iceberg : la partie visible du problème.</p>
+          <p>En réalité, c'est un pattern inscrit dans ton corps, tes émotions, tes pensées, ton énergie. Tellement bien ancré qu'il a même fini par devenir une façon de te définir : bouche à sucre, gourmande, faible, grasse, pas sérieuse.</p>
+          <div class="grid sm:grid-cols-[1fr_160px] gap-6 items-center">
+            <p>Ton envie de sucre, c'est un peu comme ce jouet, le clown avec un ressort dans une boîte. Quand il est de sortie, il se dodeline devant toi, et il t'énerve. Alors avec ta volonté, tu l'attrapes et tu l'enfonces dans la boîte, et tu fermes le couvercle, et tu tiens. ET TU TIENS. Mais un jour, faute d'inattention ou fatiguée de tenir, tu lâches et il saute hors de sa boite. Pendant un temps, ça t'amuse parce que tu avais oublié qu'il était quand même sympa avec sa petite tête de canaillou. Mais bon, il n'arrête jamais de se dodeliner et ça finit par de nouveau t'énerver. Et on est reparti pour un tour.</p>
+            <img src="/images/btp-sucre-clown.jfif" alt="Clown à ressort" class="w-36 sm:w-40 rounded-[1.5rem] justify-self-center shadow-lg" loading="lazy" />
+          </div>
+          <p>Dans Break The Pattern - Sucre, on ne te demande pas de tenir le couvercle avec plus de volonté. On travaille sur l'entièreté du système : la boite, le ressort, le clown.</p>
+          <p class="text-tw-black font-medium">Le sucre sera devenu obsolète.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-white" id="details">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
+        <div class="max-w-5xl mb-16">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Le parcours</span>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium text-tw-black leading-[1.08] mt-6">
+            Ce que tu vas vivre pendant les 3 semaines
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          {weeks.map((week) => (
+            <article class="bg-tw-gray-100 rounded-[2rem] p-8 md:p-10 min-h-[300px] flex flex-col justify-between">
+              <h3 class="text-3xl tracking-tight font-medium text-tw-black mb-8">{week.title}</h3>
+              <p class="text-lg text-tw-gray-600 font-light leading-relaxed">{week.text}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-gray-100">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-[0.9fr_1.1fr] gap-14 lg:gap-24 items-start">
+        <div class="sticky top-32 space-y-8">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-green">La cohorte équinoxe</span>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium text-tw-black leading-[1.08]">
+            Prix de lancement<br />47 €
+          </h2>
+          <p class="text-xl text-tw-gray-600 font-light leading-relaxed">Au lieu de 77 €.</p>
+          <p class="font-highlight text-3xl md:text-4xl text-tw-green leading-tight">Inscriptions ouvertes jusqu'au 21 septembre, démarrage le <strong class="font-medium text-tw-green">22 septembre</strong>.</p>
+          <p class="text-lg text-tw-gray-600 font-light leading-relaxed">On démarre le jour de l'équinoxe : un passage symbolique pour sortir de la lutte, retrouver l'équilibre, et reconstruire une relation plus apaisée au sucre.</p>
+          <a href={paymentLink} class="inline-flex bg-tw-yellow text-tw-black px-10 py-5 rounded-full items-center gap-3 text-lg hover:bg-tw-yellow/80 transition-colors group font-medium">
+            <span class="text-base tracking-wide uppercase">Je rejoins la cohorte</span>
+            <i data-lucide="arrow-right" class="w-5 h-5 stroke-[1.5] group-hover:translate-x-1 transition-transform"></i>
+          </a>
+        </div>
+        <div class="space-y-8">
+          <div class="bg-white rounded-[2rem] p-8 md:p-10">
+            <h3 class="text-3xl tracking-tight font-medium text-tw-black mb-8">Inclus dans le programme</h3>
+            <ul class="grid md:grid-cols-2 gap-5">
+              {offerDetails.map((detail) => (
+                <li class="flex gap-3 text-lg text-tw-gray-600 font-light leading-relaxed">
+                  <i data-lucide="sparkle" class="w-5 h-5 text-tw-green shrink-0 mt-1 stroke-[1.5]"></i>
+                  <span>{detail}</span>
+                </li>
+              ))}
+            </ul>
+            <p class="text-sm text-tw-gray-600 font-light leading-relaxed mt-6">*Tant que le programme et le site existent, tu garderas tes accès.</p>
+          </div>
+          <div class="bg-tw-black text-white rounded-[2rem] p-8 md:p-10">
+            <h3 class="text-3xl tracking-tight font-medium mb-6">Les dates des appels</h3>
+            <p class="text-lg text-white/70 font-light leading-relaxed">Les appels de groupe ont lieu sur Zoom les 22 septembre, 29 septembre, 6 octobre et 13 octobre.</p>
+          </div>
+          <div class="bg-white rounded-[2rem] p-8 md:p-10">
+            <h3 class="text-3xl tracking-tight font-medium text-tw-black mb-6">Garantie "Satisfait ou Remboursé, sans question"</h3>
+            <p class="text-lg text-tw-gray-600 font-light leading-relaxed">À la fin du programme, si tu ne constates aucune amélioration dans ton rapport au sucre, je te rembourse 47 € moins les frais appliqués par les plateformes de paiement, soit environ 45 €.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
+        <div class="max-w-6xl mb-16">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Témoignages</span>
+          <h2 class="font-highlight text-4xl md:text-5xl lg:text-6xl tracking-tight font-medium text-tw-black leading-[1.08] mt-6 max-w-none">
+            Elles ont déjà travaillé leur rapport au sucre
+          </h2>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          {sugarTestimonials.map((testimonial) => (
+            <article class="bg-tw-gray-100 rounded-[1.5rem] p-5 flex flex-col gap-4">
+              <p class="text-base text-tw-gray-600 font-light leading-relaxed">“{testimonial.quote}”</p>
+              <p class="text-sm uppercase tracking-widest text-tw-green font-medium">{testimonial.name}</p>
+            </article>
+          ))}
+        </div>
+        <p class="mt-6 text-sm italic text-tw-gray-600 font-light">Break The Pattern - Sucre reprend le processus Free From Addiction, adapté spécifiquement à l'esprit du sucre.</p>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-gray-100">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-2 gap-8">
+        <div class="bg-white rounded-[2rem] p-8 md:p-10">
+          <h2 class="text-3xl md:text-4xl tracking-tight font-medium text-tw-black mb-8">Ce programme n'est pas pour toi si...</h2>
+          <ul class="space-y-5 text-lg text-tw-gray-600 font-light leading-relaxed">
+            <li>Tu veux une méthode miracle qui te promet d'effacer 5kg en deux audios.</li>
+            <li>Tu cherches seulement un nouveau régime, une liste d'aliments interdits ou des astuces nutrition.</li>
+            <li>Tu n'es pas prête à t'investir un peu chaque jour pour ta liberté (parce que je vais te demander de tenir un journal, de faire les exercices et de regarder ton fonctionnement autrement).</li>
+          </ul>
+        </div>
+        <div class="bg-tw-green text-white rounded-[2rem] p-8 md:p-10">
+          <h2 class="text-3xl md:text-4xl tracking-tight font-medium mb-8">Ce programme est pour toi si...</h2>
+          <ul class="space-y-5 text-lg text-white/80 font-light leading-relaxed">
+            <li>Une part de toi dit : là, c'est bon, ça suffit.</li>
+            <li>Tu ne veux plus te battre avec toi-même pour un éclair au chocolat.</li>
+            <li>Tu veux retrouver un rapport plus sain au plaisir, au corps et à la nourriture.</li>
+            <li>Tu es prête à vivre une aventure avec toi-même pour que le sucre reprenne une juste place.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mb-16">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-green">Questions fréquentes</span>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium text-tw-black leading-[1.08] mt-6">Avant de rejoindre la cohorte</h2>
+        </div>
+        <div class="max-w-4xl space-y-4">
+          {faq.map((item) => (
+            <details class="group bg-tw-gray-100 rounded-[2rem] p-6 md:p-8">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-2xl tracking-tight font-medium text-tw-black">
+                <span>{item.q}</span>
+                <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-tw-yellow text-tw-black transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <p class="mt-5 text-lg text-tw-gray-600 font-light leading-relaxed">{item.a}</p>
+            </details>
+          ))}
+          <details class="group bg-tw-gray-100 rounded-[2rem] p-6 md:p-8">
+            <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-2xl tracking-tight font-medium text-tw-black">
+              <span>Et si je veux payer en Francs Suisses ?</span>
+              <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-tw-yellow text-tw-black transition-transform group-open:rotate-45">+</span>
+            </summary>
+            <div class="mt-5 space-y-5 text-lg text-tw-gray-600 font-light leading-relaxed">
+              <p>Le prix sera de 45 CHF.</p>
+              <a href={chfPaymentLink} class="inline-flex bg-tw-yellow text-tw-black px-8 py-4 rounded-full items-center gap-3 text-base hover:bg-tw-yellow/80 transition-colors group/button font-medium">
+                <span class="tracking-wide uppercase">Je paie en CHF</span>
+                <i data-lucide="arrow-right" class="w-5 h-5 stroke-[1.5] group-hover/button:translate-x-1 transition-transform"></i>
+              </a>
+              <details class="bg-white rounded-[1.5rem] p-5">
+                <summary class="cursor-pointer list-none text-xl tracking-tight font-medium text-tw-black">Je te fais un Twint</summary>
+                <div class="mt-4 space-y-2">
+                  <p class="text-tw-black font-medium">+41.77.456.6161</p>
+                  <p>Pense à bien préciser tes nom, prénom et adresse email.</p>
+                </div>
+              </details>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-black text-white">
+      <div class="max-w-screen-xl mx-auto px-6 md:px-12 grid lg:grid-cols-[0.9fr_1.1fr] gap-14 lg:gap-24 items-start">
+        <div class="space-y-8 lg:sticky lg:top-32">
+          <span class="text-sm font-medium tracking-widest uppercase text-tw-yellow">Qui suis-je ?</span>
+          <h2 class="font-highlight text-4xl md:text-6xl tracking-tight font-medium leading-[1.08]">
+            J'ai connu les patterns qui promettent du réconfort et finissent par prendre le pouvoir sur toi.
+          </h2>
+          <img src="/images/btp-tabac-about.jpg" alt="Eloa Alvarez" class="w-full aspect-[4/5] object-cover rounded-[3rem]" loading="lazy" />
+        </div>
+        <div class="space-y-6 text-xl text-white/70 font-light leading-relaxed">
+          <p>Break The Pattern est né de ma propre traversée avec les addictions, les automatismes et les comportements qui soulagent à court terme, mais enferment à long terme.</p>
+          <p>Pendant longtemps, j'ai cru qu'il suffisait de comprendre, de vouloir, de décider, de tenir bon. Puis j'ai vu que certains patterns ne vivent pas seulement dans les actes. Ils sont inscrits dans le corps, les émotions, l'énergie et l'identité. Et là j'ai compris que ma tête ne suffirait pas à régler le problème.</p>
+          <p>J'ai dû apprendre à aller plus loin que le comportement visible. Créer une vraie rencontre avec moi-même. Comprendre le besoin qui cherchait à être nourri. Regarder le contrat inconscient, la part de moi qui s'accrochait encore, et l'identité qui répétait le même chemin.</p>
+          <p>Avec le sucre, le mécanisme est le même : ce n'est pas seulement une histoire d'alimentation. C'est une histoire de réconfort, de plaisir, de honte parfois, de petites promesses non tenues, et d'une image de soi qui s'abîme à chaque craquage.</p>
+          <p class="font-highlight text-3xl md:text-4xl text-tw-yellow leading-tight">Je n'ai pas créé ce programme pour t'apprendre à te contrôler davantage. Je l'ai créé pour t'aider à te retrouver.</p>
+          <p>Break The Pattern - Sucre reprend le processus Free From Addiction, enrichi par mon expérience et par les accompagnements déjà menés autour du sucre, pour travailler le corps, les émotions, les pensées, l'énergie et l'identité.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-24 md:py-32 bg-tw-yellow" id="contact">
+      <div class="max-w-screen-md mx-auto px-6 md:px-12 text-center space-y-8">
+        <span class="text-sm font-medium tracking-widest uppercase text-tw-black/70">Inscriptions jusqu'au 21 septembre - démarrage le 22 septembre</span>
+        <h2 class="font-highlight text-5xl md:text-7xl tracking-tight font-medium text-tw-black leading-[1.05]">
+          Si tu sens que c'est maintenant, rejoins la cohorte de l'équinoxe.
+        </h2>
+        <p class="text-xl text-tw-black/70 font-light leading-relaxed">On démarre le 22 septembre. Prix de lancement : 47 € au lieu de 77 €.</p>
+        <a href={paymentLink} class="inline-flex bg-tw-black text-white px-10 py-5 rounded-full items-center justify-center gap-3 text-lg hover:bg-tw-green transition-colors group font-medium">
+          <span class="text-base tracking-wide uppercase">Je rejoins la cohorte</span>
+          <i data-lucide="arrow-right" class="w-5 h-5 stroke-[1.5] group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
